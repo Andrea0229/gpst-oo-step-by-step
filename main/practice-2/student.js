@@ -7,7 +7,10 @@ class Student extends Person{
     }
 
     introduce(){
-        return `${super.introduce()} I am a Student. I am at Class ${this.klass.classNum}.`
+        let msg = `${super.introduce()} I am a Student. I am `;
+        (this.name = this.klass.leader) ? msg += `Leader of Class ${this.klass.number}.` : msg +=`at Class ${this.klass.number}.`;
+
+        return msg;
     }
 }
 
