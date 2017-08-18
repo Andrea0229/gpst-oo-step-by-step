@@ -4,7 +4,7 @@ const Worker = require('../../main/practice-1/worker');
 
 describe("Person", () => {
   it("should have field name and age", () => {
-    let person = new Person("Tom", 21);
+    let person = new Person("Tom", 21);  console.log(person.name)
     expect(person.name).toBe("Tom");
     expect(person.age).toBe(21);
   });
