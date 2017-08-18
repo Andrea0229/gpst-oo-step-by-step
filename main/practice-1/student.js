@@ -3,10 +3,10 @@ const Person = require('./person');
 module.exports = class Student extends Person{
     constructor(name, age, klass){
         super(name, age);
-        this.klazz = klass;
+        this.klass = klass;
     }
 
     introduce(){
-        return super.introduce() + " I am at Class " + this.klazz + ". ";
+        return super.introduce() + " I am a Student. I am at Class " + this.klass + ".";
     }
 };
