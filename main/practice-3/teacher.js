@@ -25,7 +25,7 @@ class Teacher extends Person{
         this.clazzes.forEach(item =>{
             clss.push(item.number);
         });
-        msg = `${super.introduce()}. I am a Teacher. I teach `;
+        msg = `${super.introduce()} I am a Teacher. I teach `;
         (clss.length>0) ? msg += `Class ${clss.join(",")}.` : msg += `No Class.`;
 
         return msg;
