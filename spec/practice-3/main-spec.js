@@ -173,5 +173,5 @@ describe("Class", () => {
     clazz.assignLeader(student);
     expect(teacher.notifyLeaderAssigned).toHaveBeenCalledWith("Jerry become Leader of Class 2")
   });
-
 });
+

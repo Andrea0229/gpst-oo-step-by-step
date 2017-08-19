@@ -1,8 +1,9 @@
 // Write your code here
+var  id =1;
 class Person {
     // this.id = 1;
     constructor(name, age){
-        // this.id;
+        this.id = id++;
         this.name = name;
         this.age = age;
         // this.id++;
