@@ -30,6 +30,14 @@ class Teacher extends Person{
 
         return msg;
     }
+
+    notifyStudentAppended(){
+
+    }
+
+    notifyLeaderAssigned(){
+
+    }
 }
 
 module.exports = Teacher;
