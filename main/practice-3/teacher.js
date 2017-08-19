@@ -6,16 +6,23 @@ const Person = require('./person');
 class Teacher extends Person{
     constructor(name, age, classes){
         super(name, age);
-        this.classes = [];
-        classes.forEach(item=>{             //所带班级，每一班级都是一个lass属性
-            this.classes.push(item);
-        });
+        this.clazzes = classes;
+    }
+
+    /**
+     * 老师是否带这个学生
+     * @param stu
+     */
+    isTeaching(stu){
+        return this.clazzes.some(clazz =>{
+            return clazz.hasStudent(stu);
+        })
     }
 
     introduce(){
         let msg = "";                       //introduce中的内容
         let clss = [];                      //所有班级编号
-        this.classes.forEach(item =>{
+        this.clazzes.forEach(item =>{
             clss.push(item.number);
         });
         msg = `${super.introduce()}. I am a Teacher. I teach `;

@@ -69,12 +69,12 @@ describe("Student", () => {
 
 describe("Teacher", () => {
 
-  it("should have field name, age and klass", () => {
+  it("TTTTTTTTTTshould have field name, age and klass", () => {
     let clazz1 = new Class(2);
     let clazz2 = new Class(3);
     let teacher = new Teacher("Joun", 21, [clazz1, clazz2]);
     expect(teacher.name).toBe("Joun");
-    expect(teacher.age).toBe(21);
+    expect(teacher.age).toBe(21);   //console.log(teacher.classes)
     expect(teacher.clazzes).toEqual([clazz1, clazz2]);
   });
 
